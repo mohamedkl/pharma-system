@@ -1,0 +1,23 @@
+/* 1. Make the base layers 100% height */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* 2. Turn the body into a flex container */
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa; /* Optional: light gray for the content area */
+}
+
+/* 3. The main content grows to fill available space, pushing footer down */
+main {
+  flex: 1 0 auto;
+}
+
+/* 4. Ensure the footer stays at the bottom */
+footer {
+  flex-shrink: 0;
+}
