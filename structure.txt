@@ -1,0 +1,20 @@
+/PharmaCare-Project
+├── index.html              <-- Main Shell 
+├── app.js                  <-- Routing Brain (Default set to /dashboard)
+├── /includes               <-- Static Layout Parts
+│   ├── header.html         <-- Navbar (Contains Dashboard, Medicines, Customers)
+│   └── footer.html         <-- Minimal Footer (PharmaCare Management System)
+├── /views                  <-- Page Templates (HTML snippets)
+│   ├── dashboard.html      <-- LANDING PAGE (Stats cards and overview)
+│   ├── medicines.html      <-- Inventory list and search
+│   ├── customers.html      <-- Customer management list
+│   └── sales.html          <-- POS / Invoice creation form
+├── /controllers            <-- JavaScript Logic per view
+│   ├── DashboardCtrl.js    <-- Logic for summary stats
+│   ├── MedicineCtrl.js     <-- Logic for drug inventory
+│   ├── CustomerCtrl.js     <-- Logic for client data
+│   └── SalesCtrl.js        <-- Logic for the shopping cart/invoicing
+├── /services               <-- Backend Connection
+│   └── SupabaseService.js  <-- API logic for Supabase database
+└── /css
+    └── style.css           <-- Sticky footer and custom UI tweaks
